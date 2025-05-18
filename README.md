@@ -3,6 +3,31 @@ This project uses multi-task learning for LSTM neural networks and fine tunes a 
 
 ---
 
+## Files
+
+### CreatePolarityValenceDataset.py
+Creates datasets used as input into the LSTM and transformers.
+
+### GetReviewBigramsUnigrams.py
+Gets top 50 bigrams and unigrams containing adjectives and computes a polarity score between -1 and 1 using spacy. Used to make input files for random forest.
+
+### PlotF1.py
+Plots the results for all models ran, with various groupings.
+
+### Read_Datasets.py
+File to read in the raw data from the Cornell Movie Review Dataset. The data used is the "scale_dataset_v1.0" from https://www.cs.cornell.edu/people/pabo/movie-review-data/. This needs to be downloaded to run the analyses.
+
+### ScaleReviewHistorgrams.py
+Creates a histogram showing the frequency of each rating (0.0, 0.1, ..., 1.0) in the dataset.
+
+### mallet_en_stoplist.txt
+File containing stopwords.
+
+### ngram_counts.py
+File containing functions used to get the bigrams and unigrams in GetReviewBigramsUnigrams.py.
+
+---
+
 ## Subdirectories
 
 ### LSTM
