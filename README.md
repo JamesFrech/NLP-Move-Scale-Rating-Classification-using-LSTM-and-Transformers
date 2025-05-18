@@ -37,3 +37,16 @@ This subdirectory contains jupyter notebooks that run LSTM models for individual
 This subdirectory contains jupyter notebooks that fine tune a ROBERTA transformer for each of the five individual tasks for a comparison against the LSTM for each task. No Multi-Task learning results are shown here due to it not really improving much of anything for the pretrained model.
 
 ### Random Forest
+This subdirectory contains files to train and run a random forest model for sentiment classification and other tasks mentioned above.
+
+#### SentimentClassificationRandomForest.py
+Uses random forest for classification on movie review scale ratings.
+
+#### SentimentClassificationRandomForest_ChooseTargetVar.py
+General file for using the random forest on a chosen target variable.
+
+#### SentimentClassificationTuneRandomForest.py
+Runs 5 fold cross validation for random forest model on movie review scale ratings.
+
+#### plot_RF_CVScores.py
+Plots the F1 scores for cross validation. Used to determine best fit model.
